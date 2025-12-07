@@ -1,0 +1,3 @@
+Bank Management System is a web-based application built using Python (Flask) for backend and HTML/CSS for frontend. It allows users to create accounts, log in securely, view balances, deposit money, withdraw money, transfer funds, and view transaction history.
+
+Flask handles routing, server logic, and database connectivity, while HTML/CSS create a clean and interactive user interface. The system ensures data validation, secure password storage, and proper session management. This project helped me understand full-stack development, CRUD operations, authentication, and building real-world financial applications.
