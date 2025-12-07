@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bank Management</title>
+</head>
+
+<body>
+    <h1>Bank Accounts</h1>
+    <a href="/create">Create New Account</a> |
+    <a href="/transfer">Transfer Money</a>
+    <hr>
+    {% if banks %}
+    <ul>
+        {% for acc in banks %}
+        <li>
+            <b>{{ acc.full_name }}</b> ({{ acc.account_number }}) - Balance: {{ acc.balance }}
+            | <a href="/deposit/{{ acc.account_number }}">Deposit</a>
+            | <a href="/withdraw/{{ acc.account_number }}">Withdraw</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No accounts yet!</p>
+    {% endif %}
+</body>
+
+</html>

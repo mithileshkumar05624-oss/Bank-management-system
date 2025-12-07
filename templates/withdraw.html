@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Withdraw</title>
+</head>
+
+<body>
+    <h2>Withdraw from {{ account.full_name }} ({{ account.account_number }})</h2>
+    <form method="post">
+        Amount: <input type="number" name="amount" required><br><br>
+        <input type="submit" value="Withdraw">
+    </form>
+</body>
+
+</html>
